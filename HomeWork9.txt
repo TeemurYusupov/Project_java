@@ -1,0 +1,31 @@
+mkdir Игрушки_для_школьников
+mkdir Игрушки_для_дошколят
+
+cd Игрушки_для_школьников
+touch Роботы.txt
+touch Конструкторы.txt
+touch Настольные_игры.txt
+cd ..
+
+
+cd Игрушки_для_дошколят
+touch Мягкие_игрушки.txt
+touch Куклы.txt
+touch Машинки.txt
+cd ..
+
+
+mkdir Имя_игрушки
+cp -rl Игрушки_для_школьников/* Игрушки_для_дошколят/* Имя_игрушки
+tree Имя_игрушки
+rm -rf Игрушки_для_школьников
+rm -rf Игрушки_для_дошколят
+mv Имя_игрушки
+cd Имя_игрушки
+ls -la
+
+sudo snap install package_name
+sudo snap remove package_name
+
+crontable -e
+*/3****echo 'Hello world'>>/home/User55/Игрушки/Роботы.txt
